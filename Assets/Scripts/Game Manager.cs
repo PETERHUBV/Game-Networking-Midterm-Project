@@ -7,11 +7,9 @@ public class GameManager : NetworkBehaviour
 
     public Transform[] SpawnPoints;
 
-    public NetworkVariable<bool> IsMatchActive =
-        new NetworkVariable<bool>(true);
+    public NetworkVariable<bool> IsMatchActive = new NetworkVariable<bool>(true);
 
-    public NetworkVariable<ulong> WinnerClientId =
-        new NetworkVariable<ulong>(ulong.MaxValue);
+    public NetworkVariable<ulong> WinnerClientId =new NetworkVariable<ulong>(ulong.MaxValue);
 
     private void Awake()
     {
@@ -34,7 +32,10 @@ public class GameManager : NetworkBehaviour
 
         WinnerClientId.Value = winningClientId;
         IsMatchActive.Value = false;
-    }
+
+        Debug.Log("Match ended. Winner Client ID: " + winningClientId);
+    
+}
 // Start is called once before the first execution of Update after the MonoBehaviour is created
 void Start()
     {

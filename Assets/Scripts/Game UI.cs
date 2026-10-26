@@ -33,12 +33,20 @@ public class GameUI : MonoBehaviour
         NetworkManager networkManager = NetworkManager.Singleton;
 
         if (networkManager == null)
+        {
+            StatusText.text = "NetworkManager not found";
             return;
+        }
+            
 
         if (networkManager.IsHost)
             StatusText.text = "Connected as Host";
         else if (networkManager.IsClient && networkManager.IsConnectedClient)
             StatusText.text = "Connected as Client";
+        else if (networkManager.IsListening)
+            StatusText.text = "Connecting...";
+        else
+            StatusText.text = "Choose Host or Client";
 
         if (GameManager.Instance == null)
             return;
@@ -48,10 +56,15 @@ public class GameUI : MonoBehaviour
 
         if (!GameManager.Instance.IsMatchActive.Value)
         {
-            ulong winnerId =
-                GameManager.Instance.WinnerClientId.Value;
 
-            WinnerText.text = "Player " + (winnerId + 1) + " Wins!";
+            WinnerText.text = "";
+        }
+        else
+        {
+
+            ulong winnerId = GameManager.Instance.WinnerClientId.Value;
+
+            WinnerText.text = "P:" + (winnerId + 1) + " Wins!";
         }
     }
 
@@ -59,37 +72,40 @@ public class GameUI : MonoBehaviour
     {
         NetworkManager networkManager = NetworkManager.Singleton;
 
-        if (networkManager.IsListening)
-        {
-            Debug.LogWarning("Network already running What's next.");
+        if (networkManager == null || networkManager.IsListening)
             return;
-        }
 
-        networkManager.StartHost();
+        bool Started = networkManager.StartHost();
+
+        if (!Started)
+            StatusText.text = "Failed to Start Host";
     }
-
 
     private void StartClient()
     {
-
         NetworkManager networkManager = NetworkManager.Singleton;
 
-        if (networkManager.IsListening)
-        {
-            Debug.LogWarning("Network already running What's next.");
+        if (networkManager == null || networkManager.IsListening)
             return;
-        }
+
         UnityTransport transport =networkManager.GetComponent<UnityTransport>();
 
         transport.ConnectionData.Address = ConnectionAddress;
 
-        networkManager.StartClient();
+        bool Started = networkManager.StartClient();
+
+        if (!Started)
+            StatusText.text = "Failed to start Client";
+        else
+            StatusText.text = "Connecting...";
     }
 
     private void QuitGame()
     {
-        if (NetworkManager.Singleton.IsListening)
-            NetworkManager.Singleton.Shutdown();
+        NetworkManager networkManager = NetworkManager.Singleton;
+
+        if (networkManager != null && networkManager.IsListening)
+            networkManager.Shutdown();
 
         Application.Quit();
     }
@@ -98,12 +114,12 @@ public class GameUI : MonoBehaviour
 // Start is called once before the first execution of Update after the MonoBehaviour is created
 //void Start()
 //    {
-        
+
 //    }
 
 //    // Update is called once per frame
 //    void Update()
 //    {
-        
+
 //    }
 //}

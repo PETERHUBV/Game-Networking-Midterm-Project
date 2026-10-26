@@ -12,8 +12,7 @@ public class DisappearingObstacle : NetworkBehaviour
     private Renderer platformRenderer;
     private Collider platformCollider;
 
-    private NetworkVariable<bool> IsVisible =
-        new NetworkVariable<bool>(true);
+    private NetworkVariable<bool> IsVisible = new NetworkVariable<bool>(true);
 
     private void Awake()
     {
@@ -50,9 +49,7 @@ public class DisappearingObstacle : NetworkBehaviour
         }
     }
 
-    private void OnVisibilityChanged(
-        bool oldValue,
-        bool newValue)
+    private void OnVisibilityChanged(bool oldValue, bool newValue)
     {
         ApplyVisibility(newValue);
     }

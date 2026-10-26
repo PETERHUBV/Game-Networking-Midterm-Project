@@ -13,10 +13,7 @@ public class MovingObstacle : NetworkBehaviour
         if (!IsSpawned || !IsServer)
             return;
 
-        float movement = Mathf.PingPong(
-            Time.time * MoveSpeed,
-            1f
-        );
+        float movement = Mathf.PingPong(Time.time * MoveSpeed,1f);
 
         transform.position = Vector3.Lerp(StartPosition,EndPosition,movement);
     }

@@ -145,13 +145,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57952395}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.014809574, y: 0.6885416, z: -0.015389538, w: 0.7248823}
-  m_LocalPosition: {x: 0.06900008, y: 0.24429385, z: -0.027999924}
+  m_LocalRotation: {x: -0.016847776, y: 0.74742997, z: -0.06828745, w: -0.6606069}
+  m_LocalPosition: {x: 1.944, y: 0.47699997, z: 0.16600025}
   m_LocalScale: {x: 1, y: 1.4724712, z: 1.00003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1318625087}
-  m_LocalEulerAnglesHint: {x: 2.445, y: 87.052, z: -0.11}
+  m_LocalEulerAnglesHint: {x: 7.143, y: -456.822, z: 723.758}
 --- !u!114 &57952397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,12 +190,12 @@ Light:
   m_GameObject: {fileID: 57952395}
   m_Enabled: 1
   serializedVersion: 12
-  m_Type: 1
+  m_Type: 0
   m_Color: {r: 0.047379494, g: 0, b: 1, a: 1}
-  m_Intensity: 50
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Intensity: 3500
+  m_Range: 2.232915
+  m_SpotAngle: 42.810173
+  m_InnerSpotAngle: 37.256245
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -234,7 +234,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 30
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.22352941, g: 0.4509804, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.60784316, g: 0.6117647, b: 0.05882353, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.60784316, g: 0.6117647, b: 0.05882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -725,9 +725,9 @@ MonoBehaviour:
   Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
-  m_InScenePlaced: 0
+  m_InScenePlaced: 1
   ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
@@ -1082,10 +1082,10 @@ Light:
   m_GameObject: {fileID: 365732100}
   m_Enabled: 1
   serializedVersion: 12
-  m_Type: 1
+  m_Type: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 50
-  m_Range: 10
+  m_Intensity: 3500
+  m_Range: 2.2540877
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -1126,7 +1126,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 30
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -1146,13 +1146,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365732100}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.52287745, y: 0.4800056, z: 0.46583763, w: 0.52838355}
-  m_LocalPosition: {x: 0.06899977, y: 0.24429385, z: -0.027999878}
+  m_LocalRotation: {x: -0.014525457, y: 0.7600793, z: -0.06403354, w: -0.64650464}
+  m_LocalPosition: {x: 1.828, y: 0.55, z: 0.189}
   m_LocalScale: {x: 1, y: 1.4724712, z: 1.00003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1596395673}
-  m_LocalEulerAnglesHint: {x: -88.768, y: 110.741, z: -26.784}
+  m_LocalEulerAnglesHint: {x: 6.668, y: -459.028, z: 723.505}
 --- !u!1 &376247657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,13 +1356,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.43848193, y: -0.23061477, z: 0.11749087, w: 0.8606662}
+  m_LocalRotation: {x: 0.3845006, y: -0.78754616, z: -0.24130856, w: 0.41677395}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 53.995, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -3.416, y: -122.486, z: -53.921}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,9 +1719,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.2216981, g: 0.44968322, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.6088745, g: 0.6132076, b: 0.06074226, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.60784316, g: 0.6117647, b: 0.05882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2255,9 +2255,9 @@ MonoBehaviour:
   Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
-  m_InScenePlaced: 0
+  m_InScenePlaced: 1
   ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
@@ -2350,7 +2350,7 @@ Transform:
   m_GameObject: {fileID: 950354591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.16, y: 4.2, z: -3.5}
+  m_LocalPosition: {x: 106.11, y: 3.99, z: -3.5}
   m_LocalScale: {x: 5.012636, y: 0.66347295, z: 3.517054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2369,9 +2369,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingObstacle
   ShowTopMostFoldoutHeaderGroup: 1
-  StartPosition: {x: 106.16, y: 4.2, z: -3.5}
-  EndPosition: {x: 0, y: -9.3, z: 0}
-  MoveSpeed: 5
+  StartPosition: {x: 106.11, y: 4.2, z: -3.5}
+  EndPosition: {x: 106.11, y: -0.74, z: -3.5}
+  MoveSpeed: 0.2
 --- !u!114 &950354598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2641,9 +2641,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.22352941, g: 0.4509804, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.60784316, g: 0.6117647, b: 0.05882353, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.60784316, g: 0.6117647, b: 0.05882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2864,9 +2864,9 @@ MonoBehaviour:
   Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
-  m_InScenePlaced: 0
+  m_InScenePlaced: 1
   ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
@@ -2885,10 +2885,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
-  MoveSpeed: 6
-  JumpHeight: 2
-  Gravity: -20
-  FallLimit: -10
+  MoveSpeed: 10
+  JumpHeight: 5
+  Gravity: -9.81
+  FallLimit: -15
 --- !u!114 &1318625091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3041,7 +3041,7 @@ Transform:
   m_GameObject: {fileID: 1363945774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.85, y: 4.2, z: -9.96}
+  m_LocalPosition: {x: 13.25, y: 4.2, z: -9.96}
   m_LocalScale: {x: 5.012636, y: 0.66347295, z: 3.517054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3115,9 +3115,9 @@ MonoBehaviour:
   Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
-  m_InScenePlaced: 0
+  m_InScenePlaced: 1
   ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
@@ -3544,6 +3544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 752930d30f3683342a77c918c8c46ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinishLine
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!1 &1596395669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,14 +3656,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596395669}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.014405748, z: -0, w: 0.9998962}
-  m_LocalPosition: {x: -10.43, y: 0.51, z: -11.47}
+  m_LocalRotation: {x: -0, y: 0.77243006, z: -0, w: 0.6350999}
+  m_LocalPosition: {x: -11.15, y: 0.51, z: -10.855}
   m_LocalScale: {x: 1, y: 0.6791, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 365732103}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -1.651, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 101.145, z: 0}
 --- !u!114 &1596395674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3677,7 +3678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
   GlobalObjectIdHash: 1055999185
   InScenePlacedSourceGlobalObjectIdHash: 0
-  m_InScenePlacedDisabledByDefault: 1
+  m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0
@@ -3739,7 +3740,7 @@ MonoBehaviour:
   RotationMaxInterpolationTime: 0.1
   ScaleLerpSmoothing: 1
   ScaleMaxInterpolationTime: 0.1
-  AuthorityMode: 0
+  AuthorityMode: 1
   TickSyncChildren: 0
   UseUnreliableDeltas: 0
   SyncPositionX: 1
@@ -3775,9 +3776,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
   MoveSpeed: 10
-  JumpHeight: 40
-  Gravity: -2
-  FallLimit: -5
+  JumpHeight: 5
+  Gravity: -9.81
+  FallLimit: -15
 --- !u!1 &1813299439
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,7 +4147,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1927131369}
-    PlayerPrefab: {fileID: 1596395669}
+    PlayerPrefab: {fileID: 1318625083}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 586f3693df4321642a8bc6174887c0df, type: 2}
@@ -4157,7 +4158,7 @@ MonoBehaviour:
     EnableTimeResync: 0
     TimeResyncInterval: 30
     EnsureNetworkVariableLengthSafety: 0
-    EnableSceneManagement: 0
+    EnableSceneManagement: 1
     ForceSamePrefabs: 0
     RecycleNetworkIds: 1
     NetworkIdRecycleDelay: 120
